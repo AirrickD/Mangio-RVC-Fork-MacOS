@@ -1,3 +1,6 @@
+# 5/15 Changelog:
+- Fixed the "moaning" output issue that currently affects M1 Macs on MacOS Sonoma.
+
 # 7/28 Changelog:
 - Undo SQL change for the sake of stability, uses csv now
 - Merging checkpoints bug has been resolved
