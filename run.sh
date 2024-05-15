@@ -123,13 +123,16 @@ if [ -f "${requirements_file}" ]; then
     fi
   done < "${requirements_file}"
 else
-  echo "${requirements_file} not found. Please ensure the requirements file with required packages exists."
+  echo "${requirements_file} not found. Please ensure the requirements tfile with required packages exists."
   exit 1
 fi
 
 # Install onnxruntime package
 echo "Installing onnxruntime..."
 python3.8 -m pip install onnxruntime
+python3.8 -m pip install torch==2.3.0
+python3.8 -m pip install torchaudio==2.3.0
+python3.8 -m pip install onnxruntime-gpu
 
 download_if_not_exists() {
   local filename=$1
