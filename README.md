@@ -166,6 +166,7 @@ make install # Do this everytime you start your paperspace machine
 
 ## Windows/MacOS
 **Notice**: `faiss 1.7.2` will raise Segmentation Fault: 11 under `MacOS`, please use `pip install faiss-cpu==1.7.0` if you use pip to install it manually.  `Swig` can be installed via `brew` under `MacOS`
+**Notice**: Using this on `MacOS Sonoma 14.1.1` and versions above will result in a "tobytes" error. As of now, there is no fix. If you're on `MacOS 14.1` and under, please refrain from updating your `MacOS` Version in order to use RVC.
  
  ```bash
  brew install swig
